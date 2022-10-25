@@ -6,14 +6,17 @@ const User = require('../models/user');
 
 // Get all users
 // to test with Postman, run a GET call on url: http://localhost:3000/users
-router.get('/', async (req, res) => {
-  //res.send('Hello World from my /users route') // here the '/' is actually my '/users' route due to: <app.use('/users', usersRouter)> in my server.js file;
-  try {
-    const users = await User.find();
-    res.json(users);
-  } catch (err) {
-    res.status(500).json({ message: err.message });
-  }
+router.get('/', async (req, res) => { // here the '/' is actually my '/users' route due to: <app.use('/users', usersRouter)> in my server.js file;
+
+  res.send('Hello World from my /users route');
+
+  // try {
+  //   const users = await User.find();
+  //   res.json(users);
+
+  // } catch (err) {
+  //   res.status(500).json({ message: err.message });
+  // }
 })
 
 // Get one user (note - this calls the middleware function 'getUser' first to ensure a valid user is found)
