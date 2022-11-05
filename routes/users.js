@@ -55,9 +55,7 @@ router.patch('/:id', getUser, async (req, res) => {
 
   /* Retaining the below code as a reminder of the structure I can use in case I decide to make this route more granular than simply replacing the entire existing 'user' with the new data being passed in.*/
 
-  //test1
-  //test2
-  //test3
+  //test - this is a change I'm committing to wip-1 branch
 
   /* 
   //if the aisle is not null, update it
