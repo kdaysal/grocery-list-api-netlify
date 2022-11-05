@@ -53,6 +53,7 @@ router.patch('/:id', getUser, async (req, res) => {
     res.user.groceryListItems = req.body.groceryListItems;
   }
 
+  /* Retaining the below code as a reminder of the structure I can use in case I decide to make this route more granular than simply replacing the entire existing 'user' with the new data being passed in.*/
   /* 
   //if the aisle is not null, update it
   if (req.body.groceryListItems[0].aisle != null) {
