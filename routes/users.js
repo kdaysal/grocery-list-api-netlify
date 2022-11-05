@@ -48,11 +48,12 @@ router.patch('/:id', getUser, async (req, res) => {
     res.user.name = req.body.name;
   }
 
-  //if the itemName is not null, update it
-  if (req.body.groceryListItems[0].itemName != null) {
-    res.user.groceryListItems[0].itemName = req.body.groceryListItems[0].itemName;
+  //if the groceryListItems array is not null, update it
+  if (req.body.groceryListItems != null) {
+    res.user.groceryListItems = req.body.groceryListItems;
   }
 
+  /* 
   //if the aisle is not null, update it
   if (req.body.groceryListItems[0].aisle != null) {
     res.user.groceryListItems[0].aisle = req.body.groceryListItems[0].aisle;
@@ -62,6 +63,7 @@ router.patch('/:id', getUser, async (req, res) => {
   if (req.body.groceryListItems[0].reminder != null) {
     res.user.groceryListItems[0].reminder = req.body.groceryListItems[0].reminder;
   }
+  */
 
   try {
     const updatedUser = await res.user.save();
