@@ -4,8 +4,12 @@ const express = require('express');
 const router = express.Router();
 const User = require('../models/user');
 
+const cors = require('cors'); // implement CORS (Cross-Origin-Resource-Sharing) so the receiving server can identify where requests are coming from and allow or disallow them
+app.use(cors()); //leaving the default set up to allow requests from ALL origins for the time being
+
 // Get all users
-// to test with Postman, run a GET call on url: http://localhost:3000/users
+// to test locally with Postman, run a GET call on url: http://localhost:3000/users
+// to test my hosted api with Postman, run a GET call on url: http://damp-forest-55138.herokuapp.com/users
 router.get('/', async (req, res) => { // here the '/' is actually my '/users' route due to: <app.use('/users', usersRouter)> in my server.js file;
 
   //res.send('Hello World from my /users route'); //only needed for testing, delete eventually
