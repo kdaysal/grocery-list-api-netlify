@@ -1,5 +1,109 @@
-{"_id":{"$oid":"6355a81f8287744a6b186213"},"name":"Kevin D","groceryListItems":[{"itemName":"Pizza","aisle":"3","reminder":true,"_id":{"$oid":"6355a81f8287744a6b186214"}}],"__v":0}
-{"_id":{"$oid":"63583cdae1eee7d89afe162c"},"name":"Derek","groceryListItems":[{"_id":{"$oid":"63583cdae1eee7d89afe162d"},"aisle":"5","itemName":"Ice Cream","reminder":false}],"__v":0}
-{"_id":{"$oid":"635844147b46505d26b84dbf"},"name":"Jessica","groceryListItems":[{"itemName":"Steaks","aisle":"Meat Dept","reminder":true,"_id":{"$oid":"635844147b46505d26b84dc0"}}],"__v":0}
-{"_id":{"$oid":"6358789b6b436db0d2ab812a"},"name":"Mary","groceryListItems":[{"itemName":"Onions","aisle":"3","reminder":false,"_id":{"$oid":"6358789b6b436db0d2ab812b"}},{"itemName":"Spaghetti","aisle":"42","reminder":true,"_id":{"$oid":"6358789b6b436db0d2ab812c"}}],"__v":0}
-{"_id":{"$oid":"635c70a5539b25bef0200d5a"},"name":"Joseph","groceryListItems":[{"itemName":"Potatoe Chips","aisle":"12","reminder":false,"_id":{"$oid":"635c70a5539b25bef0200d5b"}},{"itemName":"Pasta","aisle":"13","reminder":true,"_id":{"$oid":"635c70a5539b25bef0200d5c"}},{"itemName":"Fish","aisle":"Seafood","reminder":true,"_id":{"$oid":"635c70a5539b25bef0200d5d"}}],"__v":0}
+{
+  "_id": {
+    "$oid": "6355a81f8287744a6b186213"
+  },
+  "name": "Kevin D",
+  "groceryListItems": [
+    {
+      "itemName": "Pizza",
+      "aisle": "3",
+      "reminder": true,
+      "_id": {
+        "$oid": "6355a81f8287744a6b186214"
+      }
+    }
+  ],
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "63583cdae1eee7d89afe162c"
+  },
+  "name": "Derek",
+  "groceryListItems": [
+    {
+      "_id": {
+        "$oid": "63583cdae1eee7d89afe162d"
+      },
+      "aisle": "5",
+      "itemName": "Ice Cream",
+      "reminder": false
+    }
+  ],
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "635844147b46505d26b84dbf"
+  },
+  "name": "Jessica",
+  "groceryListItems": [
+    {
+      "itemName": "Steaks",
+      "aisle": "Meat Dept",
+      "reminder": true,
+      "_id": {
+        "$oid": "635844147b46505d26b84dc0"
+      }
+    }
+  ],
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "6358789b6b436db0d2ab812a"
+  },
+  "name": "Mary",
+  "groceryListItems": [
+    {
+      "itemName": "Onions",
+      "aisle": "3",
+      "reminder": false,
+      "_id": {
+        "$oid": "6358789b6b436db0d2ab812b"
+      }
+    },
+    {
+      "itemName": "Spaghetti",
+      "aisle": "42",
+      "reminder": true,
+      "_id": {
+        "$oid": "6358789b6b436db0d2ab812c"
+      }
+    }
+  ],
+  "__v": 0
+}
+{
+  "_id": {
+    "$oid": "635c70a5539b25bef0200d5a"
+  },
+  "name": "Joseph123",
+  "groceryListItems": [
+    {
+      "itemName": "Potatoe Chips",
+      "aisle": "12",
+      "reminder": false,
+      "_id": {
+        "$oid": "635c70a5539b25bef0200d5b"
+      }
+    },
+    {
+      "itemName": "Pasta",
+      "aisle": "13",
+      "reminder": true,
+      "_id": {
+        "$oid": "635c70a5539b25bef0200d5c"
+      }
+    },
+    {
+      "itemName": "Fish",
+      "aisle": "Seafood",
+      "reminder": true,
+      "_id": {
+        "$oid": "635c70a5539b25bef0200d5d"
+      }
+    }
+  ],
+  "__v": 0
+}
