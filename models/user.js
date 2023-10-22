@@ -15,5 +15,5 @@ const userSchema = new mongoose.Schema({
   }]
 })
 
-// the '.model()' function will allow me to interact directly with my dabaste USING the schema I defined in this file
+// the '.model()' function will allow me to interact directly with my database USING the schema I defined in this file
 module.exports = mongoose.model('User', userSchema)
