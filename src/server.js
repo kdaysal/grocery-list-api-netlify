@@ -3,6 +3,7 @@
 require('dotenv').config(); //load all environment variables from the .env file
 
 const express = require('express');
+const serverless = require('serverless-http');
 const cors = require('cors'); // implement CORS (Cross-Origin-Resource-Sharing) so the receiving server can identify where requests are coming from and allow or disallow them
 const app = express();
 app.use(cors()); //leaving the default set up to allow requests from ALL origins (during development)
@@ -18,7 +19,9 @@ db.on('error', (error) => console.error(error)); //if there is an error connecti
 db.once('open', () => console.log('connected to database, yay!')); //if I successfully connect, log this message (will only run once)
 
 //Setting up the routes
-const usersRouter = require('./routes/users'); //since all routes will stem from the root url + '/users', this lets me shorthand it so in my routes (in users.js) I don't have to specify '/users' for each one.
+const usersRouter = require('../routes/users'); //since all routes will stem from the root url + '/users', this lets me shorthand it so in my routes (in users.js) I don't have to specify '/users' for each one.
 app.use('/users', usersRouter);
 
 app.listen(port, () => console.log(`server is running on port: ${port}`));
+
+module.exports.handler = serverless(app);
